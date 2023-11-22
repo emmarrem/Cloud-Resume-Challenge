@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+/* Root Colors */
+:root {
+  --primary-color: #ff5722; /* Indian Spice Color */
+  --accent-color: #8ab73a; /* Light Green */
+  --text-color: #673ab7; /* Royal Purple */
+  --background-dark: #263238; /* Dark Background */
+  --text-light: #ffffff; /* White Text */
+  --link-hover-color: #88c0d0;
+  --dark-gray-color: #333; /* Dark Gray Color */
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eceff4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 85%;
+  margin: 20px auto;
+}
+
+.header {
+  background-color: #2e3440;
+  color: #d8dee9;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.contact-info {
+  font-weight: bold;
+}
+
+.contact-info a, .contact-info i {
+  color: #d8dee9;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover, .contact-info i:hover {
+  color: var(--link-hover-color);
+}
+
+.section {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+.section h3, .section h4 {
+  color: #3b4252;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.section h3:hover, .section h4:hover {
+  color: var(--primary-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: '• ';
+  color: var(--primary-color);
+}
+
+ul li {
+  margin-bottom: 10px;
+  color: #4c566a;
+}
+
+.cert-link {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.cert-link:hover {
+  background-color: var(--accent-color);
+}
+
+footer {
+  background-color: #2e3440;
+  color: #d8dee9;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+#page-views {
+  /* existing styles */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+#page-views::before {
+  content: '👁️';
+  margin-right: 8px;
+}
+
+
+/* Theme Switcher */
+.theme-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: var(--primary-color);
+  background-color: #fff; /* Light background for light mode */
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  color: var(--dark-gray-color); /* Dark color for text and icon in light mode */
+  background-color: #fff; /* Light background for light mode */
+}
+
+.theme-switcher i {
+  margin-right: 8px;
+}
+
+/* Optional: Smaller font size for the text label if needed */
+#theme-mode-text {
+  font-size: 0.8em;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+}
+
+body.dark-mode .header {
+  background-color: var(--text-color);
+  color: var(--text-light);
+}
+
+body.dark-mode .section, 
+body.dark-mode footer, 
+body.dark-mode #page-views,
+body.dark-mode .section h2,
+body.dark-mode .section h3, 
+body.dark-mode .section h4, 
+body.dark-mode ul li {
+  color: var(--text-light); /* Improved legibility in dark mode */
+}
+
+body.dark-mode .theme-switcher {
+  color: var(--accent-color);
+}
+
+body.dark-mode .contact-info a, 
+body.dark-mode .contact-info i {
+  color: var(--text-light);
+}
+
+body.dark-mode .contact-info a:hover, 
+body.dark-mode .contact-info i:hover {
+  color: var(--link-hover-color);
+}
+
+/* Invert colors for bullet points in dark mode */
+body.dark-mode ul li::before {
+  color: var(--accent-color); /* Inverted color for dark mode */
+}
+
+/* Invert colors for certification link in dark mode */
+body.dark-mode .cert-link {
+  background-color: var(--text-light); /* Light background */
+  color: var(--primary-color); /* Dark text */
+}
+
+body.dark-mode .cert-link:hover {
+  background-color: var(--text-color); /* Different color on hover */
+}
+
+/* Dark Mode Styles for Theme Switcher */
+body.dark-mode .theme-switcher {
+  color: var(--text-light); /* Light text color for dark mode */
+  background-color: var(--background-dark); /* Dark background for dark mode */
+}
+
+/* Optional: Adjust font size for the text label if needed */
+#theme-mode-text {
+  font-size: 0.8em;
+}

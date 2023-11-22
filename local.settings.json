@@ -1,0 +1,14 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=rgresumefunctionsb802;AccountKey=s/L/H6yhuuTXL/AbaEhblog60c4xVr8YM36DwUJxz8DDKpa5pG/VKW+XVFKRWnGTc3AwtT8dgvQ9+AStUo+bJQ==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AzureResumeConnectionString": "AccountEndpoint=https://cosmosforresume.documents.azure.com:443/;AccountKey=aH7ssm07SP5U67UgBk3RLW8VDZBzLAaHjfEMF8XNe8yKnnNGc2qALsuT5Thpm3utiRHxzW2cKJCyACDb5i3TIQ==;",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=181abae7-9494-4ad6-9c31-7616fd463605;IngestionEndpoint=https://centralindia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://centralindia.livediagnostics.monitor.azure.com/",
+    "WEBSITE_CONTENTAZUREFILECONNECTIONSTRING": "DefaultEndpointsProtocol=https;AccountName=rgresumefunctionsb802;AccountKey=s/L/H6yhuuTXL/AbaEhblog60c4xVr8YM36DwUJxz8DDKpa5pG/VKW+XVFKRWnGTc3AwtT8dgvQ9+AStUo+bJQ==;EndpointSuffix=core.windows.net",
+    "WEBSITE_CONTENTSHARE": "getcounterfromcosmos9bba",
+    "WEBSITE_RUN_FROM_PACKAGE": "1",
+    "CosmosDbConnectionString": "AccountEndpoint=https://cosmosforresume.documents.azure.com:443/;AccountKey=aH7ssm07SP5U67UgBk3RLW8VDZBzLAaHjfEMF8XNe8yKnnNGc2qALsuT5Thpm3utiRHxzW2cKJCyACDb5i3TIQ=="
+  }
+}
