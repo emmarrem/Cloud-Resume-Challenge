@@ -1,4 +1,4 @@
-#Azure Cloud Resume Challenge
+# Azure Cloud Resume Challenge
 
 Overview
 This project involves the integration of GitHub, Azure DevOps, and Terraform to manage and automate the deployment of Azure Functions and Azure Storage Containers. It aims to streamline the development process, enforce good version control practices, and automate infrastructure management.
